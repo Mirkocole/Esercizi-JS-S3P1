@@ -160,10 +160,9 @@ let area = (l1,l2) =>{
  La funzione deve aggiungere la parola "code" all'inizio della stringa fornita e ritornare il risultato, ma se la stringa fornita comincia proprio con "code" allora deve ritornarla senza modifiche.
 */
 
-
-
-
+/*
 let codify = (randomString) =>{
+
     if (typeof randomString === 'string') {
         let codeString = 'code';
         if(randomString.length >= codeString.length){
@@ -186,10 +185,6 @@ let codify = (randomString) =>{
         return;
     }
 }
-
-console.log(codify('cd'));
-
-/*
 */
 
 /* ESERCIZIO 4
