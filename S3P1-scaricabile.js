@@ -166,7 +166,7 @@ let codify = (randomString) =>{
     if (typeof randomString === 'string') {
         let codeString = 'code';
         if(randomString.length >= codeString.length){
-            let checkString = randomString.slice(0,3);
+            let checkString = randomString.slice(0,4);
             if (checkString === 'code') {
                 return randomString;
             } else {
