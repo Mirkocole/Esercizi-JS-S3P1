@@ -163,22 +163,33 @@ let area = (l1,l2) =>{
 
 
 
-/*
 let codify = (randomString) =>{
     if (typeof randomString === 'string') {
-        
-        if (randomString.includes('code')) {
-            return randomString;
-        } else {
-            let newString = 'code'+randomString;
+        let codeString = 'code';
+        if(randomString.length >= codeString.length){
+            let checkString = randomString.slice(0,3);
+            if (checkString === 'code') {
+                return randomString;
+            } else {
+                let newString = codeString+randomString;
+                return newString;
+            }
+        }else{
+            let newString = codeString+randomString;
             return newString;
         }
+        
+        
 
     } else {
         console.log('La funzione richiede una stringa');
         return;
     }
 }
+
+console.log(codify('cd'));
+
+/*
 */
 
 /* ESERCIZIO 4
